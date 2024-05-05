@@ -38,22 +38,26 @@
       width: 150px;
       height: 50px;
       text-align: center;
-      border: 2px solid rgb(224, 95, 224);
-      background-color: rgba(216, 63, 216, 0.29);
-      color: rgba(45, 2, 45, 0.957);
+      border: 2px solid rgba(255, 130, 247, 0.36);
+      background-color: rgba(255, 255, 255, 0.813);
+      color: rgba(0, 0, 0, 0.55);
       text-transform: capitalize;
       border-radius: 0.5rem;
     }
 
+    .typesDropdown:focus-visible {
+      border: 2px solid rgba(255, 130, 247, 0.36) !important;
+    }
+
     option {
-      background-color: rgba(216, 63, 216, 0.29);
+      background-color: rgba(255, 255, 255, 0.813);
       height: 120px;
       text-transform: capitalize;
     }
     .animatedCircle {
       width: 10px;
       height: 2px;
-      background-color: rgb(224, 95, 224);
+      background-color: rgba(0, 0, 0, 0.36);
     }
 
     .header {
@@ -62,7 +66,7 @@
     }
 
     .header-text {
-      color: rgba(153, 8, 153, 0.957);
+      color: rgba(0, 0, 0, 0.55);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -104,7 +108,7 @@
     .left-bg-text {
       position: absolute;
       z-index: 1;
-      color: rgba(222, 222, 222, 0.406);
+      color: rgba(222, 222, 222, 0.511);
       font-size: 13rem;
       transform: rotate(270deg);
       top: 15rem;
@@ -124,9 +128,9 @@
     <div class="header">
       <div class="header-text">
         <p class="type" style="font-size: 1.25rem; font-weight: 600">
-          Select chart type 👉
+          SELECT CHART TYPE
         </p>
-        <div class="animatedCircle"></div>
+        <!-- <div class="animatedCircle"></div> -->
       </div>
       <select name="types" class="typesDropdown"></select>
     </div>
